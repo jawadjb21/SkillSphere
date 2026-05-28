@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "title": "Complete Web Development Bootcamp",
+        "instructor": "John Doe",
+        "duration": "20 hours",
+        "rating": 4.8,
+        "level": "Beginner",
+        "description": "Learn full-stack web development from scratch.",
+        "image": "/courses/web-dev.jpg",
+        "category": "Development"
+    },
+    {
+        "id": 4,
+        "title": "React.js Complete Guide",
+        "instructor": "Michael Smith",
+        "duration": "18 hours",
+        "rating": 4.9,
+        "level": "Intermediate",
+        "description": "Build scalable React applications with modern tools.",
+        "image": "/courses/react.jpg",
+        "category": "Development"
+    },
+    {
+        "id": 5,
+        "title": "Python for Beginners",
+        "instructor": "David Lee",
+        "duration": "14 hours",
+        "rating": 4.5,
+        "level": "Beginner",
+        "description": "Start programming with Python from zero experience.",
+        "image": "/courses/python.jpg",
+        "category": "Programming"
+    },
+    {
+        "id": 9,
+        "title": "Data Structures & Algorithms",
+        "instructor": "Daniel Carter",
+        "duration": "22 hours",
+        "rating": 4.9,
+        "level": "Advanced",
+        "description": "Prepare for coding interviews with DSA concepts.",
+        "image": "/courses/dsa.jpg",
+        "category": "Programming"
+    }
+]
