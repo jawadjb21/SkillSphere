@@ -5,6 +5,7 @@ import Link from 'next/link.js';
 import { FaSearch } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Image from 'next/image.js';
+import PrimaryButton from '../shared/PrimaryButton.jsx';
 
 const Navbar = () => {
     return (
@@ -20,7 +21,7 @@ const Navbar = () => {
                         {navLinks.map(navLink => <NavLink key={navLink.id} navLink={navLink}></NavLink>)}
                     </ul>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="hidden md:flex items-center gap-2">
                     <Image
                         src="/logo.png"
                         alt="SkillSphere Logo"
@@ -40,7 +41,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-end flex gap-x-4 items-center">
                 <button className='cursor-pointer'><FaSearch className='text-zinc-50' /></button>
-                <Link href={"/login"} className="btn bg-[#e1ff51] text-[#00272c] text-xl">Login</Link>
+                <PrimaryButton href={"/login"}>Login</PrimaryButton>
             </div>
         </div>
     );
