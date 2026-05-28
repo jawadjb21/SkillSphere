@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Web Development Bootcamp",
+    "instructor": "John Doe",
+    "duration": "20 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "description": "Learn full-stack web development from scratch.",
+    "image": "https://i.postimg.cc/1XrL4G8Y/web-dev.png",
+    "category": "Development"
+  },
+  {
+    "id": 2,
+    "title": "UI/UX Design Masterclass",
+    "instructor": "Sarah Johnson",
+    "duration": "15 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Master modern UI and UX design principles.",
+    "image": "https://i.postimg.cc/7L8f9K2Q/uiux.png",
+    "category": "Design"
+  },
+  {
+    "id": 3,
+    "title": "Digital Marketing Essentials",
+    "instructor": "Emily Brown",
+    "duration": "12 hours",
+    "rating": 4.6,
+    "level": "Beginner",
+    "description": "Learn SEO, social media, and digital advertising.",
+    "image": "https://i.postimg.cc/VkM8L0pW/marketing.png",
+    "category": "Marketing"
+  },
+  {
+    "id": 4,
+    "title": "React.js Complete Guide",
+    "instructor": "Michael Smith",
+    "duration": "18 hours",
+    "rating": 4.9,
+    "level": "Intermediate",
+    "description": "Build scalable React applications with modern tools.",
+    "image": "https://i.postimg.cc/FK5bVxqD/react-course.png",
+    "category": "Development"
+  },
+  {
+    "id": 5,
+    "title": "Python for Beginners",
+    "instructor": "David Lee",
+    "duration": "14 hours",
+    "rating": 4.5,
+    "level": "Beginner",
+    "description": "Start programming with Python from zero experience.",
+    "image": "https://i.postimg.cc/15X8q7Vf/python.png",
+    "category": "Programming"
+  },
+  {
+    "id": 6,
+    "title": "AWS Cloud Practitioner",
+    "instructor": "James Wilson",
+    "duration": "16 hours",
+    "rating": 4.8,
+    "level": "Intermediate",
+    "description": "Understand cloud fundamentals and AWS services.",
+    "image": "https://i.postimg.cc/Z5kYB6bM/aws.png",
+    "category": "Cloud"
+  },
+  {
+    "id": 7,
+    "title": "Node.js Backend Development",
+    "instructor": "Sophia Martinez",
+    "duration": "19 hours",
+    "rating": 4.7,
+    "level": "Advanced",
+    "description": "Create scalable backend APIs using Node.js and Express.",
+    "image": "https://i.postimg.cc/3NQf8s0t/nodejs.png",
+    "category": "Development"
+  },
+  {
+    "id": 8,
+    "title": "Mobile App Design with Figma",
+    "instructor": "Olivia Davis",
+    "duration": "10 hours",
+    "rating": 4.6,
+    "level": "Beginner",
+    "description": "Design modern mobile app interfaces using Figma.",
+    "image": "https://i.postimg.cc/43q0xL9m/figma.png",
+    "category": "Design"
+  },
+  {
+    "id": 9,
+    "title": "Data Structures & Algorithms",
+    "instructor": "Daniel Carter",
+    "duration": "22 hours",
+    "rating": 4.9,
+    "level": "Advanced",
+    "description": "Prepare for coding interviews with DSA concepts.",
+    "image": "https://i.postimg.cc/jj0M2K8f/dsa.png",
+    "category": "Programming"
+  },
+  {
+    "id": 10,
+    "title": "Cybersecurity Fundamentals",
+    "instructor": "Ava Thompson",
+    "duration": "13 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Learn essential cybersecurity concepts and practices.",
+    "image": "https://i.postimg.cc/qR5p6yJ2/cybersecurity.png",
+    "category": "Security"
+  }
+]
