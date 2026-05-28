@@ -20,9 +20,17 @@ const Navbar = () => {
                         {navLinks.map(navLink => <NavLink key={navLink.id} navLink={navLink}></NavLink>)}
                     </ul>
                 </div>
-                <div className='hidden md:flex justify-between items-center gap-x-2'>
-                    <Image className='mt-1' src={"/logo.png"} alt='Logo of the company' height={30} width={30}></Image>
-                    <Link href={"/"} className="text-3xl text-[#e1ff51]">SkillSphere</Link>
+                <div className="flex items-center gap-2">
+                    <Image
+                        src="/logo.png"
+                        alt="SkillSphere Logo"
+                        width={30}
+                        height={30}
+                    />
+
+                    <h2 className="text-3xl font-bold text-[#e1ff51]">
+                        <Link href={"/"}>SkillSphere</Link>
+                    </h2>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">
