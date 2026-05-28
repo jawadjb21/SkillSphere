@@ -27,6 +27,7 @@ const Navbar = () => {
                         alt="SkillSphere Logo"
                         width={30}
                         height={30}
+                        className='mt-2'
                     />
 
                     <h2 className="text-3xl font-bold text-[#e1ff51]">

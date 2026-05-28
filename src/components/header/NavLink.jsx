@@ -8,7 +8,7 @@ const NavLink = ({ navLink }) => {
     const isActive = navLink.path === pathname;
     return (
         <div>
-            <Link href={navLink.path} className={`${isActive ? "text-[#e1ff51]":"text-zinc-50"} font-bold text-2xl`}>{navLink.name}</Link>
+            <Link href={navLink.path} className={`${isActive ? "text-[#e1ff51]":"text-zinc-50"} font-bold text-2xl hover:underline`}>{navLink.name}</Link>
         </div>
     );
 };
