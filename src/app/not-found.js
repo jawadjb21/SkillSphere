@@ -2,6 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
+export const metadata = {
+    title: "404 - Page Not Found"
+};
+
 const NotFoundPage = () => {
     return (
         <section className="min-h-screen bg-[#00272c] flex items-center justify-center px-6">
