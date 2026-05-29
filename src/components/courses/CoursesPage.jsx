@@ -23,13 +23,16 @@ const CoursesPage = () => {
         setLoading(!loading);
         if (searchCoursesBy === "") {
             setFilteredCourses(courses);
+            setPageNumber(1);
+            return;
+        } else {
+            const newFilteredCourses = handleSearch(courses, searchCoursesBy);
+            setFilteredCourses(newFilteredCourses);
+            {/*Manually redirect to page 1 since the filtered result set might not go till the number of page search from. */ }
+            setPageNumber(1);
+            return;
         }
-        const newFilteredCourses = handleSearch(courses, searchCoursesBy);
-        setFilteredCourses(newFilteredCourses);
     };
-    console.log(pageNumber);
-    console.log(filteredCourses.length);
-    console.log(currentCourses.length);
 
     return (
         <div className='bg-[#00272c] flex flex-col justify-center items-center'>
