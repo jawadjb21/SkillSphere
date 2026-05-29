@@ -7,7 +7,6 @@ import { FaLocationArrow } from "react-icons/fa";
 
 const PopularCourses = () => {
     return (
-
         <div className='bg-[#00272c] mb-16'>
             <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 md:py-10'>
                 <div className='flex flex-col md:flex-row justify-between items-center gap-4 mb-8'>
@@ -16,7 +15,7 @@ const PopularCourses = () => {
                     </h2>
 
                     <Link href={"/courses"} className='text-[#e1ff51] text-sm sm:text-base flex items-center gap-x-2'>
-                        All Courses <FaLocationArrow className='text-sm' />
+                        All Courses <FaLocationArrow className='text-sm'/>
                     </Link>
                 </div>
 
