@@ -4,20 +4,14 @@ import TrendingCourseCard from '@/components/shared/TrendingCourseCard';
 import React, { useState } from 'react';
 import { FaSearch } from "react-icons/fa";
 import course from "@/data/courses.json"
-import paginateArray from '@/lib/paginateArray';
-
-const cardsPerPage = 6;
-const paginationNumbers = Math.ceil(course.length / cardsPerPage);
-const paginationArr = [];
-for (let i = 1; i <= paginationNumbers; i++) {
-    paginationArr.push(Number(i));
-};
+import paginateArray, { pagination } from '@/lib/paginateArray';
 
 const CoursesPage = () => {
+    const cardsPerPage = 6;
     const [pageNumber, setPageNumber] = useState(1);
-
+    const paginationArr = pagination(course, cardsPerPage);
     const currentCourses = paginateArray(course, cardsPerPage, pageNumber);
-    console.log(currentCourses);
+    console.log(paginationArr, currentCourses);
 
     return (
         <div className='bg-[#00272c] flex flex-col justify-center items-center'>
