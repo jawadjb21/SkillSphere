@@ -22,11 +22,14 @@ const CoursesPage = () => {
     const filterCourses = () => {
         setLoading(!loading);
         if (searchCoursesBy === "") {
-            setFilteredCourses(currentCourses);
+            setFilteredCourses(courses);
         }
         const newFilteredCourses = handleSearch(courses, searchCoursesBy);
         setFilteredCourses(newFilteredCourses);
-    }
+    };
+    console.log(pageNumber);
+    console.log(filteredCourses.length);
+    console.log(currentCourses.length);
 
     return (
         <div className='bg-[#00272c] flex flex-col justify-center items-center'>
