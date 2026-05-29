@@ -6,10 +6,10 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Banner = () => {
     return (
-        <div className="hero bg-[#00272c] min-h-[80vh] px-6">
+        <div className="hero bg-[#00272c] min-h-[50vh] md:min-h-[80vh] px-6">
 
             <div className="hero-content flex-col lg:flex-row-reverse justify-center items-center gap-10">
-                <div>
+                <div className='hidden md:block'>
                     <Image
                         src="/Banner.png"
                         alt='Student working on laptop'
@@ -29,7 +29,7 @@ const Banner = () => {
                     />
                 </div>
 
-                <div className="text-center lg:text-left">
+                <div className="text-left lg:text-left">
 
                     <h1 className="
                         text-4xl
@@ -55,7 +55,7 @@ const Banner = () => {
                         your career with our top courses.
                     </p>
 
-                    <div className='flex justify-center lg:justify-start gap-x-2 items-center'>
+                    <div className='flex justify-start gap-x-2 items-center'>
                         <PrimaryButton href={"/courses"}>
                             Explore
                             <FaLongArrowAltRight className='mt-1' />

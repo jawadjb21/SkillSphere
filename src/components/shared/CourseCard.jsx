@@ -9,8 +9,8 @@ const CourseCard = ({ course }) => {
         <div className="hover-3d relative">
             {/* content */}
             <div className="card lg:card-side bg-[#00272c] shadow-2xl border border-white/20 rounded-2xl">
-                <figure className="w-60 rounded-2xl">
-                    <Image src={course.image} alt="Image of the course subject" width={80} height={80} className='w-full' />
+                <figure className="w-full rounded-2xl">
+                    <Image src={course.image} alt="Image of the course subject" width={80} height={40} className='w-full' />
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title text-zinc-50 w-50">{course.title}</h2>
