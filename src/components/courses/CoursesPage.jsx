@@ -4,20 +4,14 @@ import TrendingCourseCard from '@/components/shared/TrendingCourseCard';
 import React, { useState } from 'react';
 import { FaSearch } from "react-icons/fa";
 import course from "@/data/courses.json"
-import paginateArray from '@/lib/paginateArray';
-
-const cardsPerPage = 6;
-const paginationNumbers = Math.ceil(course.length / cardsPerPage);
-const paginationArr = [];
-for (let i = 1; i <= paginationNumbers; i++) {
-    paginationArr.push(Number(i));
-};
+import paginateArray, { pagination } from '@/lib/paginateArray';
 
 const CoursesPage = () => {
+    const cardsPerPage = 6;
     const [pageNumber, setPageNumber] = useState(1);
-
+    const paginationArr = pagination(course, cardsPerPage);
     const currentCourses = paginateArray(course, cardsPerPage, pageNumber);
-    console.log(currentCourses);
+    console.log(paginationArr, currentCourses);
 
     return (
         <div className='bg-[#00272c] flex flex-col justify-center items-center'>
@@ -42,7 +36,7 @@ const CoursesPage = () => {
             </div>
             <div className="join self-center pb-4">
                 {
-                    paginationArr.map(number => <button key={number} className='join-item btn bg-[#e1ff51] text-[#00272c]' onClick={() => {setPageNumber(number)}}>{number}</button>)
+                    paginationArr.map(number => <button key={number} className={`join-item btn ${number === pageNumber ? "bg-[#e1ff51] text-[#00272c]":"bg-[#00272c] text-[#e1ff51]"}`} onClick={() => {setPageNumber(number)}}>{number}</button>)
                 }
             </div>
         </div>
