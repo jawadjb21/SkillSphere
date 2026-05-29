@@ -5,10 +5,49 @@
     "instructor": "John Doe",
     "duration": "20 hours",
     "rating": 4.8,
+    "students": 6200,
     "level": "Beginner",
-    "description": "Learn full-stack web development from scratch.",
+    "price": 34.99,
+    "description": "Comprehensive training in complete web development bootcamp with hands-on projects and practical exercises.",
     "image": "/courses/web-dev.jpg",
-    "category": "Development"
+    "category": "Development",
+    "instructorBio": "John Doe is an industry professional with years of teaching and real-world experience.",
+    "reviewsCount": 137,
+    "lastUpdated": "2025-02-15",
+    "certificate": true,
+    "whatYouWillLearn": [
+      "Core concepts",
+      "Best practices",
+      "Real-world projects",
+      "Industry workflows",
+      "Portfolio-ready skills"
+    ],
+    "curriculum": [
+      {
+        "module": "Foundations",
+        "lessons": [
+          "Introduction",
+          "Core Concepts",
+          "Tools & Setup"
+        ]
+      },
+      {
+        "module": "Intermediate Topics",
+        "lessons": [
+          "Practical Workflows",
+          "Project Development",
+          "Debugging"
+        ]
+      },
+      {
+        "module": "Advanced Applications",
+        "lessons": [
+          "Optimization",
+          "Deployment",
+          "Capstone Project"
+        ]
+      }
+    ]
   },
   {
     "id": 2,
@@ -16,10 +55,49 @@
     "instructor": "Sarah Johnson",
     "duration": "15 hours",
     "rating": 4.7,
+    "students": 7400,
     "level": "Intermediate",
-    "description": "Master modern UI and UX design principles.",
+    "price": 39.99,
+    "description": "Comprehensive training in ui/ux design masterclass with hands-on projects and practical exercises.",
     "image": "/courses/uiux.png",
-    "category": "Design"
+    "category": "Design",
+    "instructorBio": "Sarah Johnson is an industry professional with years of teaching and real-world experience.",
+    "reviewsCount": 174,
+    "lastUpdated": "2025-03-15",
+    "certificate": true,
+    "whatYouWillLearn": [
+      "Core concepts",
+      "Best practices",
+      "Real-world projects",
+      "Industry workflows",
+      "Portfolio-ready skills"
+    ],
+    "curriculum": [
+      {
+        "module": "Foundations",
+        "lessons": [
+          "Introduction",
+          "Core Concepts",
+          "Tools & Setup"
+        ]
+      },
+      {
+        "module": "Intermediate Topics",
+        "lessons": [
+          "Practical Workflows",
+          "Project Development",
+          "Debugging"
+        ]
+      },
+      {
+        "module": "Advanced Applications",
+        "lessons": [
+          "Optimization",
+          "Deployment",
+          "Capstone Project"
+        ]
+      }
+    ]
   },
   {
     "id": 3,
@@ -27,10 +105,49 @@
     "instructor": "Emily Brown",
     "duration": "12 hours",
     "rating": 4.6,
+    "students": 8600,
     "level": "Beginner",
-    "description": "Learn SEO, social media, and digital advertising.",
+    "price": 44.99,
+    "description": "Comprehensive training in digital marketing essentials with hands-on projects and practical exercises.",
     "image": "/courses/marketing.jpg",
-    "category": "Marketing"
+    "category": "Marketing",
+    "instructorBio": "Emily Brown is an industry professional with years of teaching and real-world experience.",
+    "reviewsCount": 211,
+    "lastUpdated": "2025-04-15",
+    "certificate": true,
+    "whatYouWillLearn": [
+      "Core concepts",
+      "Best practices",
+      "Real-world projects",
+      "Industry workflows",
+      "Portfolio-ready skills"
+    ],
+    "curriculum": [
+      {
+        "module": "Foundations",
+        "lessons": [
+          "Introduction",
+          "Core Concepts",
+          "Tools & Setup"
+        ]
+      },
+      {
+        "module": "Intermediate Topics",
+        "lessons": [
+          "Practical Workflows",
+          "Project Development",
+          "Debugging"
+        ]
+      },
+      {
+        "module": "Advanced Applications",
+        "lessons": [
+          "Optimization",
+          "Deployment",
+          "Capstone Project"
+        ]
+      }
+    ]
   },
   {
     "id": 4,
@@ -38,10 +155,49 @@
     "instructor": "Michael Smith",
     "duration": "18 hours",
     "rating": 4.9,
+    "students": 9800,
     "level": "Intermediate",
-    "description": "Build scalable React applications with modern tools.",
+    "price": 49.99,
+    "description": "Comprehensive training in react.js complete guide with hands-on projects and practical exercises.",
     "image": "/courses/react.jpg",
-    "category": "Development"
+    "category": "Development",
+    "instructorBio": "Michael Smith is an industry professional with years of teaching and real-world experience.",
+    "reviewsCount": 248,
+    "lastUpdated": "2025-05-15",
+    "certificate": true,
+    "whatYouWillLearn": [
+      "Core concepts",
+      "Best practices",
+      "Real-world projects",
+      "Industry workflows",
+      "Portfolio-ready skills"
+    ],
+    "curriculum": [
+      {
+        "module": "Foundations",
+        "lessons": [
+          "Introduction",
+          "Core Concepts",
+          "Tools & Setup"
+        ]
+      },
+      {
+        "module": "Intermediate Topics",
+        "lessons": [
+          "Practical Workflows",
+          "Project Development",
+          "Debugging"
+        ]
+      },
+      {
+        "module": "Advanced Applications",
+        "lessons": [
+          "Optimization",
+          "Deployment",
+          "Capstone Project"
+        ]
+      }
+    ]
   },
   {
     "id": 5,
@@ -49,10 +205,49 @@
     "instructor": "David Lee",
     "duration": "14 hours",
     "rating": 4.5,
+    "students": 11000,
     "level": "Beginner",
-    "description": "Start programming with Python from zero experience.",
+    "price": 54.99,
+    "description": "Comprehensive training in python for beginners with hands-on projects and practical exercises.",
     "image": "/courses/python.jpg",
-    "category": "Programming"
+    "category": "Programming",
+    "instructorBio": "David Lee is an industry professional with years of teaching and real-world experience.",
+    "reviewsCount": 285,
+    "lastUpdated": "2025-06-15",
+    "certificate": true,
+    "whatYouWillLearn": [
+      "Core concepts",
+      "Best practices",
+      "Real-world projects",
+      "Industry workflows",
+      "Portfolio-ready skills"
+    ],
+    "curriculum": [
+      {
+        "module": "Foundations",
+        "lessons": [
+          "Introduction",
+          "Core Concepts",
+          "Tools & Setup"
+        ]
+      },
+      {
+        "module": "Intermediate Topics",
+        "lessons": [
+          "Practical Workflows",
+          "Project Development",
+          "Debugging"
+        ]
+      },
+      {
+        "module": "Advanced Applications",
+        "lessons": [
+          "Optimization",
+          "Deployment",
+          "Capstone Project"
+        ]
+      }
+    ]
   },
   {
     "id": 6,
@@ -60,10 +255,49 @@
     "instructor": "James Wilson",
     "duration": "16 hours",
     "rating": 4.8,
+    "students": 12200,
     "level": "Intermediate",
-    "description": "Understand cloud fundamentals and AWS services.",
+    "price": 59.99,
+    "description": "Comprehensive training in aws cloud practitioner with hands-on projects and practical exercises.",
     "image": "/courses/aws.jpg",
-    "category": "Cloud"
+    "category": "Cloud",
+    "instructorBio": "James Wilson is an industry professional with years of teaching and real-world experience.",
+    "reviewsCount": 322,
+    "lastUpdated": "2025-07-15",
+    "certificate": true,
+    "whatYouWillLearn": [
+      "Core concepts",
+      "Best practices",
+      "Real-world projects",
+      "Industry workflows",
+      "Portfolio-ready skills"
+    ],
+    "curriculum": [
+      {
+        "module": "Foundations",
+        "lessons": [
+          "Introduction",
+          "Core Concepts",
+          "Tools & Setup"
+        ]
+      },
+      {
+        "module": "Intermediate Topics",
+        "lessons": [
+          "Practical Workflows",
+          "Project Development",
+          "Debugging"
+        ]
+      },
+      {
+        "module": "Advanced Applications",
+        "lessons": [
+          "Optimization",
+          "Deployment",
+          "Capstone Project"
+        ]
+      }
+    ]
   },
   {
     "id": 7,
@@ -71,10 +305,49 @@
     "instructor": "Sophia Martinez",
     "duration": "19 hours",
     "rating": 4.7,
+    "students": 13400,
     "level": "Advanced",
-    "description": "Create scalable backend APIs using Node.js and Express.",
+    "price": 64.99,
+    "description": "Comprehensive training in node.js backend development with hands-on projects and practical exercises.",
     "image": "/courses/node.jpg",
-    "category": "Development"
+    "category": "Development",
+    "instructorBio": "Sophia Martinez is an industry professional with years of teaching and real-world experience.",
+    "reviewsCount": 359,
+    "lastUpdated": "2025-08-15",
+    "certificate": true,
+    "whatYouWillLearn": [
+      "Core concepts",
+      "Best practices",
+      "Real-world projects",
+      "Industry workflows",
+      "Portfolio-ready skills"
+    ],
+    "curriculum": [
+      {
+        "module": "Foundations",
+        "lessons": [
+          "Introduction",
+          "Core Concepts",
+          "Tools & Setup"
+        ]
+      },
+      {
+        "module": "Intermediate Topics",
+        "lessons": [
+          "Practical Workflows",
+          "Project Development",
+          "Debugging"
+        ]
+      },
+      {
+        "module": "Advanced Applications",
+        "lessons": [
+          "Optimization",
+          "Deployment",
+          "Capstone Project"
+        ]
+      }
+    ]
   },
   {
     "id": 8,
@@ -82,10 +355,49 @@
     "instructor": "Olivia Davis",
     "duration": "10 hours",
     "rating": 4.6,
+    "students": 14600,
     "level": "Beginner",
-    "description": "Design modern mobile app interfaces using Figma.",
+    "price": 69.99,
+    "description": "Comprehensive training in mobile app design with figma with hands-on projects and practical exercises.",
     "image": "/courses/design.png",
-    "category": "Design"
+    "category": "Design",
+    "instructorBio": "Olivia Davis is an industry professional with years of teaching and real-world experience.",
+    "reviewsCount": 396,
+    "lastUpdated": "2025-09-15",
+    "certificate": true,
+    "whatYouWillLearn": [
+      "Core concepts",
+      "Best practices",
+      "Real-world projects",
+      "Industry workflows",
+      "Portfolio-ready skills"
+    ],
+    "curriculum": [
+      {
+        "module": "Foundations",
+        "lessons": [
+          "Introduction",
+          "Core Concepts",
+          "Tools & Setup"
+        ]
+      },
+      {
+        "module": "Intermediate Topics",
+        "lessons": [
+          "Practical Workflows",
+          "Project Development",
+          "Debugging"
+        ]
+      },
+      {
+        "module": "Advanced Applications",
+        "lessons": [
+          "Optimization",
+          "Deployment",
+          "Capstone Project"
+        ]
+      }
+    ]
   },
   {
     "id": 9,
@@ -93,10 +405,49 @@
     "instructor": "Daniel Carter",
     "duration": "22 hours",
     "rating": 4.9,
+    "students": 15800,
     "level": "Advanced",
-    "description": "Prepare for coding interviews with DSA concepts.",
+    "price": 74.99,
+    "description": "Comprehensive training in data structures & algorithms with hands-on projects and practical exercises.",
     "image": "/courses/dsa.jpg",
-    "category": "Programming"
+    "category": "Programming",
+    "instructorBio": "Daniel Carter is an industry professional with years of teaching and real-world experience.",
+    "reviewsCount": 433,
+    "lastUpdated": "2025-10-15",
+    "certificate": true,
+    "whatYouWillLearn": [
+      "Core concepts",
+      "Best practices",
+      "Real-world projects",
+      "Industry workflows",
+      "Portfolio-ready skills"
+    ],
+    "curriculum": [
+      {
+        "module": "Foundations",
+        "lessons": [
+          "Introduction",
+          "Core Concepts",
+          "Tools & Setup"
+        ]
+      },
+      {
+        "module": "Intermediate Topics",
+        "lessons": [
+          "Practical Workflows",
+          "Project Development",
+          "Debugging"
+        ]
+      },
+      {
+        "module": "Advanced Applications",
+        "lessons": [
+          "Optimization",
+          "Deployment",
+          "Capstone Project"
+        ]
+      }
+    ]
   },
   {
     "id": 10,
@@ -104,9 +455,48 @@
     "instructor": "Ava Thompson",
     "duration": "13 hours",
     "rating": 4.7,
+    "students": 17000,
     "level": "Intermediate",
-    "description": "Learn essential cybersecurity concepts and practices.",
+    "price": 79.99,
+    "description": "Comprehensive training in cybersecurity fundamentals with hands-on projects and practical exercises.",
     "image": "/courses/cybersec.png",
-    "category": "Security"
+    "category": "Security",
+    "instructorBio": "Ava Thompson is an industry professional with years of teaching and real-world experience.",
+    "reviewsCount": 470,
+    "lastUpdated": "2025-11-15",
+    "certificate": true,
+    "whatYouWillLearn": [
+      "Core concepts",
+      "Best practices",
+      "Real-world projects",
+      "Industry workflows",
+      "Portfolio-ready skills"
+    ],
+    "curriculum": [
+      {
+        "module": "Foundations",
+        "lessons": [
+          "Introduction",
+          "Core Concepts",
+          "Tools & Setup"
+        ]
+      },
+      {
+        "module": "Intermediate Topics",
+        "lessons": [
+          "Practical Workflows",
+          "Project Development",
+          "Debugging"
+        ]
+      },
+      {
+        "module": "Advanced Applications",
+        "lessons": [
+          "Optimization",
+          "Deployment",
+          "Capstone Project"
+        ]
+      }
+    ]
   }
 ]

@@ -39,7 +39,7 @@ const CoursesPage = () => {
             <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 md:py-10'>
                 <div className='flex flex-col justify-center items-center gap-4'>
                     <h2 className='text-2xl sm:text-4xl font-bold text-zinc-50 text-center'>
-                        Popular Courses
+                        All Courses
                     </h2>
                     <div className='flex justify-between items-center gap-x-2'>
                         <label className="input">
