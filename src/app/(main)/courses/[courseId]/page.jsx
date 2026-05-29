@@ -1,4 +1,4 @@
-import CourseOVerview from '@/components/courses/CourseOVerview';
+import CourseDetailsSection from '@/components/courses/CourseDetailsSection';
 import PrimaryButton from '@/components/shared/PrimaryButton';
 import findCourseByCourseId from '@/lib/findCourseByCourseId';
 import Image from 'next/image';
@@ -46,7 +46,7 @@ const CourseDetailsPage = async ({ params }) => {
                         <PrimaryButton href={"#"}>Enroll</PrimaryButton>
                     </div>
                 </div>
-                <CourseOVerview course={course}></CourseOVerview>
+                <CourseDetailsSection course={course}></CourseDetailsSection>
             </div>
         </div>
     );
