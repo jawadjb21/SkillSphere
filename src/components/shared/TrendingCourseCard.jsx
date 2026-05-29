@@ -5,7 +5,7 @@ import { CiStar } from 'react-icons/ci';
 
 const TrendingCourseCard = ({ course }) => {
     return (
-        <div className="card bg-[#00272c] w-full max-w-sm mx-auto shadow-2xl border border-white/20 rounded-2xl">
+        <div className="card bg-[#00272c] w-full max-w-sm mx-auto shadow-2xl border border-white/20 rounded-2xl  hover:scale-101 cursor-pointer">
             <figure className="w-full h-48 sm:h-56 overflow-hidden rounded-t-2xl">
                 <Image
                     src={course.image}
