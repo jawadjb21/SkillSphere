@@ -3,3 +3,8 @@
 @plugin "daisyui" {
     themes: light --default, dark --prefersdark;
 }
+
+/* Accordion arrow */
+.collapse-arrow > .collapse-title::after {
+    color: #e1ff51;
+}
