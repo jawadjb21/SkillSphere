@@ -16,35 +16,38 @@
     "lastUpdated": "2025-02-15",
     "certificate": true,
     "overview": [
-      "Core concepts",
-      "Best practices",
-      "Real-world projects",
-      "Industry workflows",
-      "Portfolio-ready skills"
+      "Build responsive websites with HTML and CSS",
+      "Master modern JavaScript fundamentals",
+      "Develop interactive React applications",
+      "Create REST APIs using Node.js and Express",
+      "Deploy full-stack projects to production"
     ],
     "curriculum": [
       {
-        "module": "Foundations",
+        "module": "HTML & CSS Fundamentals",
         "lessons": [
-          "Introduction",
-          "Core Concepts",
-          "Tools & Setup"
+          "HTML Structure",
+          "Forms & Validation",
+          "Flexbox",
+          "CSS Grid"
         ]
       },
       {
-        "module": "Intermediate Topics",
+        "module": "JavaScript Essentials",
         "lessons": [
-          "Practical Workflows",
-          "Project Development",
-          "Debugging"
+          "Variables & Functions",
+          "Arrays & Objects",
+          "DOM Manipulation",
+          "ES6 Features"
         ]
       },
       {
-        "module": "Advanced Applications",
+        "module": "React Development",
         "lessons": [
-          "Optimization",
-          "Deployment",
-          "Capstone Project"
+          "Components",
+          "Props & State",
+          "Hooks",
+          "Routing"
         ]
       }
     ]
@@ -66,35 +69,38 @@
     "lastUpdated": "2025-03-15",
     "certificate": true,
     "overview": [
-      "Core concepts",
-      "Best practices",
-      "Real-world projects",
-      "Industry workflows",
-      "Portfolio-ready skills"
+      "Understand user-centered design principles",
+      "Conduct effective UX research",
+      "Create wireframes and user flows",
+      "Build interactive prototypes in Figma",
+      "Design professional design systems"
     ],
     "curriculum": [
       {
-        "module": "Foundations",
+        "module": "UX Research",
         "lessons": [
-          "Introduction",
-          "Core Concepts",
-          "Tools & Setup"
+          "User Personas",
+          "User Journeys",
+          "Competitor Analysis",
+          "Research Methods"
         ]
       },
       {
-        "module": "Intermediate Topics",
+        "module": "Wireframing",
         "lessons": [
-          "Practical Workflows",
-          "Project Development",
-          "Debugging"
+          "Low Fidelity Wireframes",
+          "High Fidelity Wireframes",
+          "Information Architecture",
+          "Layout Systems"
         ]
       },
       {
-        "module": "Advanced Applications",
+        "module": "Figma & Prototyping",
         "lessons": [
-          "Optimization",
-          "Deployment",
-          "Capstone Project"
+          "Components",
+          "Auto Layout",
+          "Interactive Prototypes",
+          "Design Systems"
         ]
       }
     ]
@@ -116,35 +122,38 @@
     "lastUpdated": "2025-04-15",
     "certificate": true,
     "overview": [
-      "Core concepts",
-      "Best practices",
-      "Real-world projects",
-      "Industry workflows",
-      "Portfolio-ready skills"
+      "Create successful digital marketing campaigns",
+      "Perform keyword and SEO research",
+      "Manage social media strategies",
+      "Run paid advertising campaigns",
+      "Measure performance using analytics tools"
     ],
     "curriculum": [
       {
-        "module": "Foundations",
+        "module": "Marketing Fundamentals",
         "lessons": [
-          "Introduction",
-          "Core Concepts",
-          "Tools & Setup"
+          "Digital Marketing Overview",
+          "Customer Journey",
+          "Target Audience",
+          "Marketing Funnels"
         ]
       },
       {
-        "module": "Intermediate Topics",
+        "module": "SEO",
         "lessons": [
-          "Practical Workflows",
-          "Project Development",
-          "Debugging"
+          "Keyword Research",
+          "On-Page SEO",
+          "Technical SEO",
+          "Link Building"
         ]
       },
       {
-        "module": "Advanced Applications",
+        "module": "Advertising",
         "lessons": [
-          "Optimization",
-          "Deployment",
-          "Capstone Project"
+          "Google Ads",
+          "Facebook Ads",
+          "Campaign Tracking",
+          "Analytics"
         ]
       }
     ]
@@ -166,35 +175,38 @@
     "lastUpdated": "2025-05-15",
     "certificate": true,
     "overview": [
-      "Core concepts",
-      "Best practices",
-      "Real-world projects",
-      "Industry workflows",
-      "Portfolio-ready skills"
+      "Build reusable React components",
+      "Manage state with React Hooks",
+      "Implement client-side routing",
+      "Consume REST APIs efficiently",
+      "Optimize React application performance"
     ],
     "curriculum": [
       {
-        "module": "Foundations",
+        "module": "React Fundamentals",
         "lessons": [
-          "Introduction",
-          "Core Concepts",
-          "Tools & Setup"
+          "JSX",
+          "Components",
+          "Props",
+          "State"
         ]
       },
       {
-        "module": "Intermediate Topics",
+        "module": "Advanced React",
         "lessons": [
-          "Practical Workflows",
-          "Project Development",
-          "Debugging"
+          "Hooks",
+          "Context API",
+          "Custom Hooks",
+          "Performance Optimization"
         ]
       },
       {
-        "module": "Advanced Applications",
+        "module": "Project Development",
         "lessons": [
-          "Optimization",
-          "Deployment",
-          "Capstone Project"
+          "React Router",
+          "API Integration",
+          "Authentication",
+          "Deployment"
         ]
       }
     ]
@@ -216,35 +228,38 @@
     "lastUpdated": "2025-06-15",
     "certificate": true,
     "overview": [
-      "Core concepts",
-      "Best practices",
-      "Real-world projects",
-      "Industry workflows",
-      "Portfolio-ready skills"
+      "Write clean Python programs",
+      "Work with variables and data types",
+      "Create reusable functions",
+      "Handle files and exceptions",
+      "Build beginner-friendly projects"
     ],
     "curriculum": [
       {
-        "module": "Foundations",
+        "module": "Python Basics",
         "lessons": [
-          "Introduction",
-          "Core Concepts",
-          "Tools & Setup"
+          "Variables",
+          "Data Types",
+          "Operators",
+          "User Input"
         ]
       },
       {
-        "module": "Intermediate Topics",
+        "module": "Control Flow",
         "lessons": [
-          "Practical Workflows",
-          "Project Development",
-          "Debugging"
+          "Conditions",
+          "Loops",
+          "Functions",
+          "Error Handling"
         ]
       },
       {
-        "module": "Advanced Applications",
+        "module": "Projects",
         "lessons": [
-          "Optimization",
-          "Deployment",
-          "Capstone Project"
+          "Calculator App",
+          "File Handling",
+          "Mini Games",
+          "Final Project"
         ]
       }
     ]
@@ -266,35 +281,38 @@
     "lastUpdated": "2025-07-15",
     "certificate": true,
     "overview": [
-      "Core concepts",
-      "Best practices",
-      "Real-world projects",
-      "Industry workflows",
-      "Portfolio-ready skills"
+      "Understand cloud computing fundamentals",
+      "Navigate the AWS ecosystem",
+      "Use core AWS services effectively",
+      "Apply AWS security best practices",
+      "Prepare for the AWS Cloud Practitioner exam"
     ],
     "curriculum": [
       {
-        "module": "Foundations",
+        "module": "Cloud Fundamentals",
         "lessons": [
-          "Introduction",
-          "Core Concepts",
-          "Tools & Setup"
+          "Cloud Computing",
+          "AWS Global Infrastructure",
+          "Shared Responsibility",
+          "Pricing Models"
         ]
       },
       {
-        "module": "Intermediate Topics",
+        "module": "Core Services",
         "lessons": [
-          "Practical Workflows",
-          "Project Development",
-          "Debugging"
+          "EC2",
+          "S3",
+          "RDS",
+          "Lambda"
         ]
       },
       {
-        "module": "Advanced Applications",
+        "module": "Security & Monitoring",
         "lessons": [
-          "Optimization",
-          "Deployment",
-          "Capstone Project"
+          "IAM",
+          "CloudWatch",
+          "AWS Config",
+          "Best Practices"
         ]
       }
     ]
@@ -316,35 +334,38 @@
     "lastUpdated": "2025-08-15",
     "certificate": true,
     "overview": [
-      "Core concepts",
-      "Best practices",
-      "Real-world projects",
-      "Industry workflows",
-      "Portfolio-ready skills"
+      "Build scalable backend applications",
+      "Create RESTful APIs with Express",
+      "Connect applications to MongoDB",
+      "Implement authentication and authorization",
+      "Deploy backend services to production"
     ],
     "curriculum": [
       {
-        "module": "Foundations",
+        "module": "Node Fundamentals",
         "lessons": [
-          "Introduction",
-          "Core Concepts",
-          "Tools & Setup"
+          "Node Runtime",
+          "Modules",
+          "NPM",
+          "File System"
         ]
       },
       {
-        "module": "Intermediate Topics",
+        "module": "Express.js",
         "lessons": [
-          "Practical Workflows",
-          "Project Development",
-          "Debugging"
+          "Routing",
+          "Middleware",
+          "Controllers",
+          "Error Handling"
         ]
       },
       {
-        "module": "Advanced Applications",
+        "module": "Backend Projects",
         "lessons": [
-          "Optimization",
-          "Deployment",
-          "Capstone Project"
+          "MongoDB",
+          "Authentication",
+          "REST APIs",
+          "Deployment"
         ]
       }
     ]
@@ -366,35 +387,38 @@
     "lastUpdated": "2025-09-15",
     "certificate": true,
     "overview": [
-      "Core concepts",
-      "Best practices",
-      "Real-world projects",
-      "Industry workflows",
-      "Portfolio-ready skills"
+      "Design mobile-first user interfaces",
+      "Create reusable Figma components",
+      "Build responsive design systems",
+      "Develop interactive prototypes",
+      "Prepare designs for developer handoff"
     ],
     "curriculum": [
       {
-        "module": "Foundations",
+        "module": "Mobile Design Basics",
         "lessons": [
-          "Introduction",
-          "Core Concepts",
-          "Tools & Setup"
+          "Mobile UX",
+          "Layouts",
+          "Typography",
+          "Color Systems"
         ]
       },
       {
-        "module": "Intermediate Topics",
+        "module": "Figma Workflow",
         "lessons": [
-          "Practical Workflows",
-          "Project Development",
-          "Debugging"
+          "Frames",
+          "Components",
+          "Auto Layout",
+          "Design Systems"
         ]
       },
       {
-        "module": "Advanced Applications",
+        "module": "Prototype & Handoff",
         "lessons": [
-          "Optimization",
-          "Deployment",
-          "Capstone Project"
+          "Interactive Prototypes",
+          "Developer Handoff",
+          "User Testing",
+          "Portfolio Project"
         ]
       }
     ]
@@ -416,35 +440,38 @@
     "lastUpdated": "2025-10-15",
     "certificate": true,
     "overview": [
-      "Core concepts",
-      "Best practices",
-      "Real-world projects",
-      "Industry workflows",
-      "Portfolio-ready skills"
+      "Master essential data structures",
+      "Solve algorithmic coding challenges",
+      "Understand time and space complexity",
+      "Prepare for technical interviews",
+      "Apply advanced problem-solving techniques"
     ],
     "curriculum": [
       {
-        "module": "Foundations",
+        "module": "Core Data Structures",
         "lessons": [
-          "Introduction",
-          "Core Concepts",
-          "Tools & Setup"
+          "Arrays",
+          "Linked Lists",
+          "Stacks",
+          "Queues"
         ]
       },
       {
-        "module": "Intermediate Topics",
+        "module": "Trees & Graphs",
         "lessons": [
-          "Practical Workflows",
-          "Project Development",
-          "Debugging"
+          "Binary Trees",
+          "BST",
+          "Graphs",
+          "Traversals"
         ]
       },
       {
-        "module": "Advanced Applications",
+        "module": "Algorithms",
         "lessons": [
-          "Optimization",
-          "Deployment",
-          "Capstone Project"
+          "Sorting",
+          "Searching",
+          "Recursion",
+          "Dynamic Programming"
         ]
       }
     ]
@@ -466,35 +493,38 @@
     "lastUpdated": "2025-11-15",
     "certificate": true,
     "overview": [
-      "Core concepts",
-      "Best practices",
-      "Real-world projects",
-      "Industry workflows",
-      "Portfolio-ready skills"
+      "Understand cybersecurity principles",
+      "Identify common cyber threats",
+      "Secure networks and systems",
+      "Apply risk management practices",
+      "Respond to security incidents effectively"
     ],
     "curriculum": [
       {
-        "module": "Foundations",
+        "module": "Security Basics",
         "lessons": [
-          "Introduction",
-          "Core Concepts",
-          "Tools & Setup"
+          "CIA Triad",
+          "Threat Landscape",
+          "Attack Vectors",
+          "Risk Management"
         ]
       },
       {
-        "module": "Intermediate Topics",
+        "module": "Network Security",
         "lessons": [
-          "Practical Workflows",
-          "Project Development",
-          "Debugging"
+          "Firewalls",
+          "VPNs",
+          "IDS/IPS",
+          "Secure Protocols"
         ]
       },
       {
-        "module": "Advanced Applications",
+        "module": "Security Operations",
         "lessons": [
-          "Optimization",
-          "Deployment",
-          "Capstone Project"
+          "Incident Response",
+          "Vulnerability Assessment",
+          "Security Monitoring",
+          "Best Practices"
         ]
       }
     ]
