@@ -24,7 +24,7 @@ const Registerpage = () => {
     const [isShowConfirmPassword, setShowConfirmPassword] = useState(false);
 
     const handleRegister = async (data) => {
-        console.log(data);
+        setLoading(true);
         const { name, photo, email, password, confirmPassword } = data;
 
         const { data: res, error } = await authClient.signUp.email({
@@ -36,7 +36,6 @@ const Registerpage = () => {
         });
 
         if (error) {
-            console.log(error);
             setLoading(false);
             return;
         };
