@@ -10,7 +10,7 @@ import { FaClock, FaSearch, FaUser, FaLevelUpAlt, FaStar } from 'react-icons/fa'
 const CourseDetailsPage = async ({ params }) => {
     const { courseId } = await params;
     const course = findCourseByCourseId(Number(courseId));
-    console.log(course);
+
     return (
         <div className='bg-[#011e22] flex flex-col justify-center items-center text-zinc-50'>
             <div className='max-w-7xl mx-auto lg:px-8 py-2 md:py-10 flex flex-col'>

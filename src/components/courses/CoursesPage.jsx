@@ -1,11 +1,10 @@
 "use client";
-import PrimaryButton from '@/components/shared/PrimaryButton';
 import TrendingCourseCard from '@/components/shared/TrendingCourseCard';
 import React, { useState } from 'react';
 import { FaSearch } from "react-icons/fa";
 import courses from "@/data/courses.json"
-import paginateArray, { pagination } from '@/lib/paginateArray';
-import handleSearch from '@/lib/handleSearch';
+import paginateArray, { pagination } from '@/lib/paginateArray.js';
+import handleSearch from '@/lib/handleSearch.js';
 
 const CoursesPage = () => {
     const cardsPerPage = 6;
