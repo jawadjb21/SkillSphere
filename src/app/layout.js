@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       suppressHydrationWarning
       data-theme="light"
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full bg-[#00272c] flex flex-col">{children}</body>
     </html>
   );
 }
