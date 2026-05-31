@@ -11,7 +11,19 @@ const Loginpage = () => {
         handleSubmit,
         watch,
         formState: { errors },
+        setError,
     } = useForm();
+
+    const email = watch("email");
+    const password = watch("password");
+
+    // const notify = (message, type = "info") => {
+    //     if (toast[type]) {
+    //         toast[type](message);
+    //     } else {
+    //         toast(message);
+    //     }
+    // };
 
     const [loading, setLoading] = useState(false);
     const [isShowPassword, setShowPassword] = useState(false);
@@ -26,7 +38,10 @@ const Loginpage = () => {
             callbackURL: "/",
         });
         if (error) {
-            console.log(error);
+            setError("root", {
+                type: "manual",
+                message: "Invalid email or password",
+            });
             setLoading(false);
             return;
         }
@@ -45,16 +60,19 @@ const Loginpage = () => {
                 <h1 className='text-3xl font-bold text-zinc-50'>Welcome Back!</h1>
                 <p className='text-md text-zinc-400'>Login to continue your learning journey</p>
             </div>
-            <form action={handleSubmit(handleLogin)}>
+            <form onSubmit={handleSubmit(handleLogin)}>
                 <fieldset className="fieldset rounded-box w-xs px-4">
 
                     <label className="label">Email</label>
                     <input type="email" {...register("email", { required: "Email is required" })} className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Enter your Email" />
+                    {errors?.email && <span className='text-red-500'>{errors.email.message}</span>}
 
                     <label className="label">Password</label>
                     <input type="password" {...register("password", { required: "Password is required" })} className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Enter a Password" />
+                    {errors?.password && <span className='text-red-500'>{errors.password.message}</span>}
                     <Link href={"/#"} className='text-[#e1ff51] text-end font-bold'>Forgot password</Link>
-
+                    
+                    {errors.root && (<span className="text-red-500">{errors.root.message}</span>)}
                     <button type='submit' className="btn bg-[#e1ff51] text-[#00272c] mt-4 font-semibold text-xl">{loading ? "Please wait..." : "Login"}</button>
                 </fieldset>
             </form>

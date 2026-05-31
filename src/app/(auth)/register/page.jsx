@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { ToastContainer, toast } from 'react-toastify';
+import isEmail from 'validator/lib/isEmail';
 
 const Registerpage = () => {
     const router = useRouter();
@@ -23,12 +23,13 @@ const Registerpage = () => {
 
     const handleRegister = async (data) => {
         console.log(data);
-        const { name, email, password } = data;
+        const { name, photo, email, password, confirmPassword } = data;
 
         const { data: res, error } = await authClient.signUp.email({
             name: name,
             email: email,
             password: password,
+            photo: photo,
             callbackURL: "/",
         });
 
@@ -59,8 +60,11 @@ const Registerpage = () => {
                     <input type="text" {...register("name", { required: "Name is required." })} className="input bg-[#01343a] text-zinc-50 border-white/20" autoFocus placeholder="Enter Your Name" />
                     {errors?.name && <span className='text-red-500'>{errors.name.message}</span>}
 
+                    <label className="label text-[#e1ff51]">Photo</label>
+                    <input type="text" {...register("photo")} className="input bg-[#01343a] text-zinc-50 border-white/20" autoFocus placeholder="Enter Your Photo URL" />
+
                     <label className="label text-[#e1ff51]">Email</label>
-                    <input type="email" {...register("email", { required: "Email is required." })} className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Enter your Email" />
+                    <input type="text" {...register("email", { required: "Email is required.", validate: value => isEmail(value) || "Please enter a valid email address" })} className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Enter your Email" />
                     {errors?.email && <span className='text-red-500'>{errors.email.message}</span>}
 
                     <label className="label text-[#e1ff51]">Password</label>
@@ -86,7 +90,6 @@ const Registerpage = () => {
                 </button>
             </div>
             <p className='font-semibold text-end text-zinc-50'>Already have an account? <Link href={"/login"} className='text-[#e1ff51]'>Login</Link></p>
-            <ToastContainer />
         </section>
     );
 };
