@@ -15,6 +15,7 @@ const RegisterPage = () => {
         handleSubmit,
         watch,
         formState: { errors },
+        setError
     } = useForm();
 
     const password = watch("password");
@@ -37,6 +38,18 @@ const RegisterPage = () => {
 
         if (error) {
             setLoading(false);
+            if (error?.message?.toLowerCase() === "password too short") {
+                setError("password", {
+                    type: "manual",
+                    message: "Password needs to be at least 12 characters.",
+                });
+            }
+            if (error?.message?.toLowerCase() === "password too short") {
+                setError("confirmPassword", {
+                    type: "manual",
+                    message: "Password needs to be at least 12 characters.",
+                });
+            }
             return;
         };
         setLoading(false);
@@ -76,7 +89,7 @@ const RegisterPage = () => {
 
                     <label className="label text-[#e1ff51]">Password</label>
                     <div className="relative">
-                        <input type={isShowPassword ? "text" : "password"} {...register("password", { required: "Password is required." })} className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Enter a Password" />
+                        <input type={isShowPassword ? "text" : "password"} {...register("password", { required: "Password is required.", minLength: { value: 12, message: "Password needs to be at least 12 characters." } })} className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Enter a Password" />
                         <span className='absolute top-3.5 right-4 cursor-pointer text-zinc-50' onClick={() => setShowPassword(!isShowPassword)}>
                             {isShowPassword ? <FaEyeSlash /> : <FaEye />}
                         </span>
