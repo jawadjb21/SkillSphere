@@ -15,6 +15,7 @@ const RegisterPage = () => {
         handleSubmit,
         watch,
         formState: { errors },
+        setError
     } = useForm();
 
     const password = watch("password");
@@ -37,6 +38,18 @@ const RegisterPage = () => {
 
         if (error) {
             setLoading(false);
+            if (error?.message?.toLowerCase() === "password too short") {
+                setError("password", {
+                    type: "manual",
+                    message: "Password needs to be at least 12 characters.",
+                });
+            }
+            if (error?.message?.toLowerCase() === "password too short") {
+                setError("confirmPassword", {
+                    type: "manual",
+                    message: "Password needs to be at least 12 characters.",
+                });
+            }
             return;
         };
         setLoading(false);
