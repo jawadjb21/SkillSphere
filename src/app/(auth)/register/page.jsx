@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Registerpage = () => {
     const router = useRouter();
@@ -15,20 +16,23 @@ const Registerpage = () => {
         formState: { errors },
     } = useForm();
 
+    const password = watch("password");
+
     const [loading, setLoading] = useState(false);
     const [isShowPassword, setShowPassword] = useState(false);
 
     const handleRegister = async (data) => {
         console.log(data);
         const { name, email, password, confirmPassword } = data;
-        
+
         const { data: res, error } = await authClient.signUp.email({
             name: name,
             email: email,
             password: password,
             callbackURL: "/",
         });
-        if(error){
+        
+        if (error) {
             console.log(error);
             setLoading(false);
             return;
@@ -49,7 +53,7 @@ const Registerpage = () => {
                 <h1 className='text-3xl font-bold text-zinc-50'>Create an Account</h1>
                 <p className='text-md text-zinc-400'>Start your learning journey with us.</p>
             </div>
-            <form action={handleSubmit(handleRegister)}>
+            <form onSubmit={handleSubmit(handleRegister)}>
                 <fieldset className="fieldset rounded-box w-xs px-4">
                     <label className="label text-[#e1ff51]">Name</label>
                     <input type="text" {...register("name", { required: "Name is required." })} className="input bg-[#01343a] text-zinc-50 border-white/20" autoFocus placeholder="Enter Your Name" />
@@ -64,7 +68,7 @@ const Registerpage = () => {
                     {errors?.password && <span className='text-red-500'>{errors.password.message}</span>}
 
                     <label className="label text-[#e1ff51]">Confirm Password</label>
-                    <input type="password" {...register("confirmPassword", { required: "Please re-enter your password." })} className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Re-enter your Password" />
+                    <input type="password" {...register("confirmPassword", { required: "Please re-enter your password.", validate: value => value === password || "Passwords don't match." })} className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Re-enter your Password" />
                     {errors?.confirmPassword && <span className='text-red-500'>{errors.confirmPassword.message}</span>}
                     <button type='submit' className="btn bg-[#e1ff51] text-[#00272c] mt-4 font-semibold text-xl">{loading ? "Please wait..." : "Register"}</button>
                 </fieldset>
@@ -82,6 +86,7 @@ const Registerpage = () => {
                 </button>
             </div>
             <p className='font-semibold text-end text-zinc-50'>Already have an account? <Link href={"/login"} className='text-[#e1ff51]'>Login</Link></p>
+            <ToastContainer />
         </section>
     );
 };
