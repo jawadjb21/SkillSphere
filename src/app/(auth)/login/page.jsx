@@ -25,7 +25,7 @@ const Loginpage = () => {
             rememberMe: true,
             callbackURL: "/",
         });
-        if(error){
+        if (error) {
             console.log(error);
             setLoading(false);
             return;
@@ -45,18 +45,19 @@ const Loginpage = () => {
                 <h1 className='text-3xl font-bold text-zinc-50'>Welcome Back!</h1>
                 <p className='text-md text-zinc-400'>Login to continue your learning journey</p>
             </div>
-            <form action={handleSubmit(handleLogin)}></form>
-            <fieldset className="fieldset rounded-box w-xs px-4">
+            <form action={handleSubmit(handleLogin)}>
+                <fieldset className="fieldset rounded-box w-xs px-4">
 
-                <label className="label">Email</label>
-                <input type="email" {...register("email", { required: "Email is required" })} className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Enter your Email" />
+                    <label className="label">Email</label>
+                    <input type="email" {...register("email", { required: "Email is required" })} className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Enter your Email" />
 
-                <label className="label">Password</label>
-                <input type="password" {...register("password", { required: "Password is required" })} className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Enter a Password" />
-                <Link href={"/#"} className='text-[#e1ff51] text-end font-bold'>Forgot password</Link>
+                    <label className="label">Password</label>
+                    <input type="password" {...register("password", { required: "Password is required" })} className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Enter a Password" />
+                    <Link href={"/#"} className='text-[#e1ff51] text-end font-bold'>Forgot password</Link>
 
-                <button type='submit' className="btn bg-[#e1ff51] text-[#00272c] mt-4 font-semibold text-xl">{loading ? "Please wait..." : "Login"}</button>
-            </fieldset>
+                    <button type='submit' className="btn bg-[#e1ff51] text-[#00272c] mt-4 font-semibold text-xl">{loading ? "Please wait..." : "Login"}</button>
+                </fieldset>
+            </form>
             <div className="flex items-center gap-2">
                 <hr className="flex-1 border-white/20" />
                 <span className="text-md text-zinc-50">OR</span>
