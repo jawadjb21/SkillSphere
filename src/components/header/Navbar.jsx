@@ -6,8 +6,17 @@ import { FaSearch } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Image from 'next/image.js';
 import PrimaryButton from '../shared/PrimaryButton.jsx';
+import { headers } from 'next/headers.js';
+import { auth } from '@/lib/auth.js';
+import LogoutButton from '../shared/LogoutButton.jsx';
 
-const Navbar = () => {
+const Navbar = async () => {
+    const session = await auth.api.getSession({
+        headers: await headers() // you need to pass the headers object.
+    });
+    const user = session?.user;
+    console.log(user);
+
     return (
         <div className="navbar shadow-sm bg-[#00272c] px-8">
             <div className="navbar-start">
@@ -41,8 +50,10 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end flex gap-x-4 items-center">
-                <button className='cursor-pointer'><FaSearch className='text-zinc-50' /></button>
-                <PrimaryButton href={"/login"}>Login</PrimaryButton>
+                {
+                    user ? <LogoutButton href={"/login"}>Logout</LogoutButton>
+                        : <PrimaryButton href={"/login"}>Login</PrimaryButton>
+                }
             </div>
         </div>
     );
