@@ -1,10 +1,10 @@
 import CourseDetailsSection from '@/components/courses/CourseDetailsSection';
-import PrimaryButton from '@/components/shared/PrimaryButton';
+import EnrollButton from '@/components/shared/EnrollButton';
 import findCourseByCourseId from '@/lib/findCourseByCourseId';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { FaClock, FaSearch, FaUser, FaLevelUpAlt, FaStar } from 'react-icons/fa';
+import { FaClock, FaUser, FaLevelUpAlt, FaStar } from 'react-icons/fa';
 
 
 const CourseDetailsPage = async ({ params }) => {
@@ -43,7 +43,7 @@ const CourseDetailsPage = async ({ params }) => {
                         </div>
                         <span className='flex justify-between items-center gap-x-2 font-semibold md:text-xl'><span className='text-[#e1ff51] flex justify-between items-center gap-x-2'><FaStar />{course.rating}</span> ({course.reviewsCount} reviews)</span>
                         <p className='font-semibold text-lg text-center lg:text-left'>{course.description}</p>
-                        <PrimaryButton href={"#"}>Enroll</PrimaryButton>
+                        <EnrollButton href={"#"} courseTitle={course.title}>Enroll</EnrollButton>
                     </div>
                 </div>
                 <CourseDetailsSection course={course}></CourseDetailsSection>
