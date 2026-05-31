@@ -9,9 +9,8 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@better-auth/mongo-adapter": "^1.6.12",
-    "better-auth": "^1.6.12",
-    "kysely": "^0.28.8",
+    "@better-auth/mongo-adapter": "^1.6.13",
+    "better-auth": "^1.2.7",
     "mongodb": "^7.2.0",
     "next": "16.2.6",
     "react": "19.2.4",
