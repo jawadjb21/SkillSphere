@@ -1,8 +1,38 @@
+"use client";
+import { authClient } from '@/lib/auth-client';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
 
 const Loginpage = () => {
+    const {
+        register,
+        handleSubmit,
+        watch,
+        formState: { errors },
+    } = useForm();
+
+    const [loading, setLoading] = useState(false);
+    const [isShowPassword, setShowPassword] = useState(false);
+
+    const handleLogin = async (data) => {
+        setLoading(true);
+        const { email, password } = data;
+        const { data: res, error } = await authClient.signIn.email({
+            email: email, // required
+            password: password, // required
+            rememberMe: true,
+            callbackURL: "/",
+        });
+        if(error){
+            console.log(error);
+            setLoading(false);
+            return;
+        }
+        setLoading(false);
+    }
+
     return (
         <section className='card bg-[#00272c] w-full max-w-sm mx-auto shadow-2xl border border-white/20 rounded-2xl flex flex-col justify-between items-center gap-y-4 my-auto py-6 px-12'>
             <div className='flex justify-evenly items-center gap-x-2'>
@@ -15,16 +45,17 @@ const Loginpage = () => {
                 <h1 className='text-3xl font-bold text-zinc-50'>Welcome Back!</h1>
                 <p className='text-md text-zinc-400'>Login to continue your learning journey</p>
             </div>
+            <form action={handleSubmit(handleLogin)}></form>
             <fieldset className="fieldset rounded-box w-xs px-4">
 
                 <label className="label">Email</label>
-                <input type="email" className="input bg-[#01343a] text-zinc-50 border-white/20" autoFocus placeholder="Email" />
+                <input type="email" {...register("email", { required: "Email is required" })} className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Enter your Email" />
 
                 <label className="label">Password</label>
-                <input type="password" className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Password" />
+                <input type="password" {...register("password", { required: "Password is required" })} className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Enter a Password" />
                 <Link href={"/#"} className='text-[#e1ff51] text-end font-bold'>Forgot password</Link>
 
-                <button className="btn bg-[#e1ff51] text-[#00272c] mt-4 font-semibold text-xl">Login</button>
+                <button type='submit' className="btn bg-[#e1ff51] text-[#00272c] mt-4 font-semibold text-xl">{loading ? "Please wait..." : "Login"}</button>
             </fieldset>
             <div className="flex items-center gap-2">
                 <hr className="flex-1 border-white/20" />

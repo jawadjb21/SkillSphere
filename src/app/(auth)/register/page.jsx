@@ -1,8 +1,42 @@
+"use client";
+import { authClient } from '@/lib/auth-client';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import { useRouter } from 'next/navigation';
+import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
 
 const Registerpage = () => {
+    const router = useRouter();
+    const {
+        register,
+        handleSubmit,
+        watch,
+        formState: { errors },
+    } = useForm();
+
+    const [loading, setLoading] = useState(false);
+    const [isShowPassword, setShowPassword] = useState(false);
+
+    const handleRegister = async (data) => {
+        console.log(data);
+        const { name, email, password, confirmPassword } = data;
+        
+        const { data: res, error } = await authClient.signUp.email({
+            name: name,
+            email: email,
+            password: password,
+            callbackURL: "/",
+        });
+        if(error){
+            console.log(error);
+            setLoading(false);
+            return;
+        };
+        setLoading(false);
+        router.push("/");
+    }
+
     return (
         <section className='card bg-[#00272c] w-full max-w-sm mx-auto shadow-2xl border border-white/20 rounded-2xl flex flex-col justify-between items-center gap-y-4 my-auto py-6 px-12'>
             <div className='flex justify-evenly items-center gap-x-2'>
@@ -15,22 +49,27 @@ const Registerpage = () => {
                 <h1 className='text-3xl font-bold text-zinc-50'>Create an Account</h1>
                 <p className='text-md text-zinc-400'>Start your learning journey with us.</p>
             </div>
-            <fieldset className="fieldset rounded-box w-xs px-4">
+            <form action={handleSubmit(handleRegister)}>
+                <fieldset className="fieldset rounded-box w-xs px-4">
+                    <label className="label text-[#e1ff51]">Name</label>
+                    <input type="text" {...register("name", { required: "Name is required." })} className="input bg-[#01343a] text-zinc-50 border-white/20" autoFocus placeholder="Enter Your Name" />
+                    {errors?.name && <span className='text-red-500'>{errors.name.message}</span>}
 
-                <label className="label">Name</label>
-                <input type="email" className="input bg-[#01343a] text-zinc-50 border-white/20" autoFocus placeholder="Enter Your Name" />
+                    <label className="label text-[#e1ff51]">Email</label>
+                    <input type="email" {...register("email", { required: "Email is required." })} className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Enter your Email" />
+                    {errors?.email && <span className='text-red-500'>{errors.email.message}</span>}
 
-                <label className="label">Email</label>
-                <input type="email" className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Enter your Email" />
+                    <label className="label text-[#e1ff51]">Password</label>
+                    <input type="password" {...register("password", { required: "Password is required." })} className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Enter a Password" />
+                    {errors?.password && <span className='text-red-500'>{errors.password.message}</span>}
 
-                <label className="label">Password</label>
-                <input type="password" className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Enter a Password" />
+                    <label className="label text-[#e1ff51]">Confirm Password</label>
+                    <input type="password" {...register("confirmPassword", { required: "Please re-enter your password." })} className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Re-enter your Password" />
+                    {errors?.confirmPassword && <span className='text-red-500'>{errors.confirmPassword.message}</span>}
+                    <button type='submit' className="btn bg-[#e1ff51] text-[#00272c] mt-4 font-semibold text-xl">{loading ? "Please wait..." : "Register"}</button>
+                </fieldset>
+            </form>
 
-                <label className="label">Confirm Password</label>
-                <input type="password" className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Re-enter your Password" />
-
-                <button className="btn bg-[#e1ff51] text-[#00272c] mt-4 font-semibold text-xl">Register</button>
-            </fieldset>
             <div className="flex items-center gap-2">
                 <hr className="flex-1 border-white/20" />
                 <span className="text-md text-zinc-50">OR</span>
