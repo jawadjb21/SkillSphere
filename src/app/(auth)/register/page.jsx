@@ -23,7 +23,7 @@ const Registerpage = () => {
 
     const handleRegister = async (data) => {
         console.log(data);
-        const { name, email, password, confirmPassword } = data;
+        const { name, email, password } = data;
 
         const { data: res, error } = await authClient.signUp.email({
             name: name,
@@ -31,7 +31,7 @@ const Registerpage = () => {
             password: password,
             callbackURL: "/",
         });
-        
+
         if (error) {
             console.log(error);
             setLoading(false);
