@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
-import CourseOverview from './CourseOverview';
-import CurriculumView from './CurriculumView';
+import CurriculumView from './CurriculumView.jsx';
+import CourseOverview from './CourseOverview.jsx';
 
 const CourseDetailsSection = ({ course }) => {
     const [selectedView, setSelectedView] = useState("overview");
