@@ -81,7 +81,7 @@ const RegisterPage = () => {
                     {errors?.name && <span className='text-red-500'>{errors.name.message}</span>}
 
                     <label className="label text-[#e1ff51]">Photo</label>
-                    <input type="text" {...register("photo")} className="input bg-[#01343a] text-zinc-50 border-white/20" autoFocus placeholder="Enter Your Photo URL" />
+                    <input type="text" {...register("photo")} className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Enter Your Photo URL" />
 
                     <label className="label text-[#e1ff51]">Email</label>
                     <input type="text" {...register("email", { required: "Email is required.", validate: value => isEmail(value) || "Please enter a valid email address" })} className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Enter your Email" />
