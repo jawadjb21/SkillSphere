@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import isEmail from 'validator/lib/isEmail';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const Registerpage = () => {
     const router = useRouter();
@@ -20,6 +21,7 @@ const Registerpage = () => {
 
     const [loading, setLoading] = useState(false);
     const [isShowPassword, setShowPassword] = useState(false);
+    const [isShowConfirmPassword, setShowConfirmPassword] = useState(false);
 
     const handleRegister = async (data) => {
         console.log(data);
@@ -74,11 +76,21 @@ const Registerpage = () => {
                     {errors?.email && <span className='text-red-500'>{errors.email.message}</span>}
 
                     <label className="label text-[#e1ff51]">Password</label>
-                    <input type="password" {...register("password", { required: "Password is required." })} className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Enter a Password" />
+                    <div className="relative">
+                        <input type={isShowPassword ? "text" : "password"} {...register("password", { required: "Password is required." })} className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Enter a Password" />
+                        <span className='absolute top-3.5 right-4 cursor-pointer text-zinc-50' onClick={() => setShowPassword(!isShowPassword)}>
+                            {isShowPassword ? <FaEyeSlash /> : <FaEye />}
+                        </span>
+                    </div>
                     {errors?.password && <span className='text-red-500'>{errors.password.message}</span>}
 
                     <label className="label text-[#e1ff51]">Confirm Password</label>
-                    <input type="password" {...register("confirmPassword", { required: "Please re-enter your password.", validate: value => value === password || "Passwords don't match." })} className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Re-enter your Password" />
+                    <div className="relative">
+                        <input type={isShowConfirmPassword ? "text" : "password"} {...register("confirmPassword", { required: "Please re-enter your password.", validate: value => value === password || "Passwords don't match." })} className="input bg-[#01343a] text-zinc-50 border-white/20" placeholder="Re-enter your Password" />
+                        <span className='absolute top-3.5 right-4 cursor-pointer text-zinc-50' onClick={() => setShowConfirmPassword(!isShowConfirmPassword)}>
+                            {isShowConfirmPassword ? <FaEyeSlash /> : <FaEye />}
+                        </span>
+                    </div>
                     {errors?.confirmPassword && <span className='text-red-500'>{errors.confirmPassword.message}</span>}
                     <button type='submit' className="btn bg-[#e1ff51] text-[#00272c] mt-4 font-semibold text-xl">{loading ? "Please wait..." : "Register"}</button>
                 </fieldset>
