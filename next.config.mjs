@@ -4,7 +4,17 @@ const nextConfig = {
   reactCompiler: true,
   experimental: {
     serverComponentsExternalPackages: ['@better-auth/kysely-adapter'],
-  }
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+        port: '',
+        search: '',
+      },
+    ],
+  },
 };
 
 export default nextConfig;

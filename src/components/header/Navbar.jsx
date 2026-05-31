@@ -15,7 +15,6 @@ const Navbar = async () => {
         headers: await headers() // you need to pass the headers object.
     });
     const user = session?.user;
-    console.log(user);
 
     return (
         <div className="navbar shadow-sm bg-[#00272c] px-8">
