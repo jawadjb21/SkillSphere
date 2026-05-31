@@ -7,6 +7,19 @@ import React from 'react';
 import { FaClock, FaUser, FaLevelUpAlt, FaStar } from 'react-icons/fa';
 
 
+export async function generateMetadata({ params }) {
+    // read route params
+    const { courseId } = await params;
+
+    // fetch data
+    const course = findCourseByCourseId(Number(courseId));
+
+    return {
+        title: course.title,
+        description: course.description
+    }
+}
+
 const CourseDetailsPage = async ({ params }) => {
     const { courseId } = await params;
     const course = findCourseByCourseId(Number(courseId));

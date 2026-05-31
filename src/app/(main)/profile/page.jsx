@@ -4,6 +4,11 @@ import React from 'react';
 import { auth } from '@/lib/auth.js';
 import { headers } from 'next/headers';
 
+export const metadata = {
+    title: "SkillSphere | Profile",
+    description: "SkillSphere Profile Section",
+};
+
 const page = async () => {
     const session = await auth.api.getSession({
         headers: await headers() // you need to pass the headers object.

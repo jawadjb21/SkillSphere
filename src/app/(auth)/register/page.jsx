@@ -8,7 +8,7 @@ import { useForm } from 'react-hook-form';
 import isEmail from 'validator/lib/isEmail';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
-const Registerpage = () => {
+const RegisterPage = () => {
     const router = useRouter();
     const {
         register,
@@ -111,4 +111,4 @@ const Registerpage = () => {
     );
 };
 
-export default Registerpage;
+export default RegisterPage;
